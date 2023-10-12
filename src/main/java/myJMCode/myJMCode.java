@@ -34,6 +34,8 @@ public class myJMCode {
 		driver.findElement(By.id("onetrust-button-group-parent")).click();
 		driver.findElement(By.xpath("//*[@id=\"layout_23\"]/a")).click();
 		System.out.println("Verified the URL");
+		String strTitle = driver.getTitle();
+		System.out.println("Title is " +strTitle);
 		driver.close();
 
 
